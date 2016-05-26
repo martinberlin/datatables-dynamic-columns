@@ -1,0 +1,34 @@
+{
+    "data": [{
+        "work": "Symfony No. 3 in D minor",
+        "id": "1",
+        "composer": "Anton Bruckner"
+    }, {
+        "work": "Violin Concerto in E minor",
+        "id": "2",
+        "composer": "Mendelssohn Felix"
+    }, {
+      "work": "Symfony No.1 in C major",
+      "id": "3",
+      "composer": "Beethoven, Ludwig van"
+    }, {
+        "work": "Solution for dynamic headers in datatables",
+        "id": "4",
+        "composer": "Fasani, Guza"
+      }],
+    "columns": [
+                        {
+                            "data": "work",
+                            "name": "Work"
+                        },
+                        {
+                            "data": "id",
+                            "name": "Product ID"
+
+                        },
+                        {
+                            "data": "composer",
+                            "name": "Composer"
+                        }
+                ]
+}

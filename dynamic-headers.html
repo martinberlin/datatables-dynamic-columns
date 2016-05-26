@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Datatable with dynamic headers</title>
+
+    <link rel="stylesheet" type="text/css" href="datatables.min.css">
+    <script src="datatables.min.js"></script>
+</head>
+
+<body>
+    <h2>Skygate front-end LAB Datatable example with dynamic headers</h2>
+
+    <table id="demotable" class="table table-striped table-condensed dataTable">
+        <thead><tr></tr></thead>
+    </table>
+
+
+    <script>
+        var data,
+                tableName= '#demotable',
+                columns,
+                str,
+                jqxhr = $.ajax('data/data.json')
+                        .done(function () {
+                            data = JSON.parse(jqxhr.responseText);
+
+                // Iterate each column and print table headers for Datatables
+                $.each(data.columns, function (k, colObj) {
+                    str = '<th>' + colObj.name + '</th>';
+                    $(str).appendTo(tableName+'>thead>tr');
+                });
+
+                // Add some Render transformations to Columns
+                // Not a good practice to add any of this in API/ Json side
+                data.columns[0].render = function (data, type, row) {
+                    return '<h4>' + data + '</h4>';
+                }
+                        // Debug? console.log(data.columns[0]);
+
+                $(tableName).dataTable({
+                    "data": data.data,
+                    "columns": data.columns,
+                    "fnInitComplete": function () {
+                        // Event handler to be fired when rendering is complete (Turn off Loading gif for example)
+                        console.log('Datatable rendering complete');
+                    }
+                });
+            })
+            .fail(function () {
+                console.log("Something graciously failed in the Ajax call");
+            });
+    </script>
+
+<div style="margin-top:12em;width:100%;height: auto;background-color: lightgrey; color:#FFF">Authors:
+    <a style="color:#FFF" href="http://fasani.de">Martin Fasani</a>, Diego Guza
+    Based on <a style="color:midnightblue" href="http://datatables.net">datatables jQuery plugin</a>
+</div>
+
+</body>
+
+</html>
