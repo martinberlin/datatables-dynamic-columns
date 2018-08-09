@@ -17,4 +17,4 @@ datatables js and css is included for demo purposes. Please download latest vers
 
 Allan from Datatables for creating such an awesome data visualization plugin. Using if for more than 3 years and counting!
 Diego for his help on building a simple, yet effective logic.
-[https://www.skygate.de](SkyGate GmbH) for giving me the time and support to do this and share it in an open repository
+[SkyGate GmbH](https://www.skygate.de) for giving me the time and support to do this and share it in an open repository
