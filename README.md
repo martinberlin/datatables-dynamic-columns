@@ -13,6 +13,14 @@ Resume:
 datatables js and css is included for demo purposes. Please download latest version of datatables here:
 [https://datatables.net/download](https://datatables.net/download)
 
+## Exceptions
+
+Using this dynamic generation of Columns won't play well with:
+
+     "serverSide": true
+     
+ Since we are “fabricating” the table ourselves. Other than that so far everything else works just as a normal dataTable.
+ 
 ### Thanks to 
 
 Allan from Datatables for creating such an awesome data visualization plugin. Using if for more than 3 years and counting!
