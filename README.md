@@ -26,3 +26,14 @@ Using this dynamic generation of Columns won't play well with:
 Allan from Datatables for creating such an awesome data visualization plugin. Using if for more than 3 years and counting!
 Diego for his help on building a simple, yet effective logic.
 [SkyGate GmbH](https://www.skygate.de) for giving me the time and support to do this and share it in an open repository
+
+### Sponsoring
+
+If you like this solution please consider becoming a sponsor where you can donate as little as 2 u$ per month. Just click on:
+**❤ Sponsor**  on the top right
+
+♢ For cryptocurrency users is also possible to help this project transferring Ethereum:
+
+0x68cEAB84F33776a7Fac977B2Bdc0D50933344086
+
+We are thankful for the support and contributions so far!
